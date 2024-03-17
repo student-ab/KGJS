@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div class="my-div" style="border: 2px solid red">Lorem ips</div> -->
+    <h3 id="greeting"></h3>
+
+    <script>
+      function dogreeting(personname = "dear") {
+        let d = new Date();
+        let hours = d.getHours();
+        let heading = document.querySelector("#greeting");
+        if (hours > 5 && hours < 12) {
+          heading.innerHTML = `GOOD  MORINING  ${personname}`;
+        } else if (hours > 12 && hours < 18) {
+          heading.innerHTML = `GOOD  evening  ${personname}`;
+        } else {
+          heading.innerHTML = `GOOD night`;
+        }
+      }
+      dogreeting("abhishek");
+
+      // let button = document.createElement("Button");
+      // // let button1 = document.createElement("Button1");
+      // button.innerText = "click here!";
+      // document.querySelector(".my-div").appendChild(button);
+      // document.querySelector(".my-div").appendChild(button1);
+
+      // let product = {
+      //   name: "jeans",
+      //   size: "S",
+      //   fit: "slim fit",
+      //   rating: {
+      //     star: 4.5,
+      //     reviwes: "goods",
+      //   },
+      // };
+      // localStorage.setItem("name", "abhishek");
+      // localStorage.setItem("price", "5634");
+      // console.log(localStorage.getItem("price"));
+      // console.log(localStorage.getItem("name"));
+      // localStorage.removeItem("price");
+      // localStorage.clear();
+
+      // console.log(product);
+      // console.log(typeof product);
+      // let str = JSON.stringify(product);
+      // console.log(typeof str);
+      // let load = JSON.parse(str);
+      // console.log(typeof load);
+    </script>
+  </body>
+</html>

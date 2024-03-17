@@ -7,17 +7,24 @@
   </head>
   <body>
     <script>
-      function check() {
-        let age = 21;
-        let status;
-        if (age > 18) {
-          status = "you can";
-        } else {
-          status = " you can not";
-        }
-        return status;
-      }
-      console.log(check());
+      let product = {
+        name: "jeans",
+        size: "S",
+        fit: "slim fit",
+      };
+      let copyproduct = product;
+      console.log(product);
+      copyproduct.size = "M";
+      console.log(product);
+
+      let obj = {
+        message: "good",
+        status: "complete",
+      };
+      console.log(obj.message);
     </script>
   </body>
 </html>
+|
+
+

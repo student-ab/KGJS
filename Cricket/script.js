@@ -7,7 +7,7 @@ const show = ()=>{
   if (randomNumber > 0 && randomNumber <= 1) {
      computerchoice = 'bat';
     // console.log("you choosen bat");
-
+                 
     
   }
   else  if (randomNumber > 1 && randomNumber <= 2) {
